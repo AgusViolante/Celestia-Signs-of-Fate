@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Celestia_SignsofFate",
+			"Path": "..\\Source\\Celestia_SignsofFate.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Celestia_SignsofFateEditor",
+			"Path": "..\\Source\\Celestia_SignsofFateEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/BlueprintsBase/BP_ObjectBase.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/BlueprintsBase/BP_Armor.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/Objects/BP_Armor.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/Interfaces/I_Collectable.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/70/0X1L913Z8U51BJTU7WN56G.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/Objects/BP_Armor_Child.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Characters/Mannequins/Meshes/SKM_Quinn_Simple.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset"
+			]
+		}
+	]
+}
