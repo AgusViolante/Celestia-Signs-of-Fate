@@ -6,7 +6,6 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/BlueprintsBase/BP_ObjectBase.uasset",
-				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/BlueprintsBase/BP_Armor.uasset",
 				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/Objects/BP_Armor.uasset",
 				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/Interfaces/I_Collectable.uasset",
@@ -14,7 +13,13 @@
 				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/Objects/BP_Armor_Child.uasset",
 				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/F/4G/TYFCMQ9MC435YW6FZBF5FS.uasset",
 				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Characters/Mannequins/Meshes/SKM_Quinn_Simple.uasset",
-				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset"
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Characters/Mannequins/Meshes/SK_Mannequin.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/BP_Cube.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/Objects/BP_Helmet.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/G2/HOYDGTQUSG6WSZFLTJOQVU.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Input/IMC_Default.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Input/Actions/IA_Dash.uasset",
+				"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Content/Blueprints/BlueprintsBase/BP_Armor.uasset"
 			]
 		}
 	]

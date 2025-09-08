@@ -12,8 +12,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeCelestia_SignsofFateCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
+CELESTIA_SIGNSOFFATE_API UClass* Z_Construct_UClass_ABP_Helmet2_NoRegister();
 CELESTIA_SIGNSOFFATE_API UClass* Z_Construct_UClass_ACelestia_SignsofFateCharacter();
 CELESTIA_SIGNSOFFATE_API UClass* Z_Construct_UClass_ACelestia_SignsofFateCharacter_NoRegister();
+CELESTIA_SIGNSOFFATE_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
+CELESTIA_SIGNSOFFATE_API UClass* Z_Construct_UClass_UI_Equipar_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -320,6 +323,19 @@ struct Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics
 		{ "ToolTip", "Mouse Look Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BP_Helmet2_MetaData[] = {
+		{ "Category", "Celestia_SignsofFateCharacter" },
+		{ "ModuleRelativePath", "Celestia_SignsofFateCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Celestia_SignsofFateCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Helmets_MetaData[] = {
+		{ "Category", "Inventary" },
+		{ "ModuleRelativePath", "Celestia_SignsofFateCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -327,6 +343,9 @@ struct Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_BP_Helmet2;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Health;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Helmets;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -336,6 +355,7 @@ struct Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics
 		{ &Z_Construct_UFunction_ACelestia_SignsofFateCharacter_DoMove, "DoMove" }, // 3448592014
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACelestia_SignsofFateCharacter>::IsAbstract,
 	};
@@ -347,6 +367,9 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACelestia_Sign
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACelestia_SignsofFateCharacter, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACelestia_SignsofFateCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACelestia_SignsofFateCharacter, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_BP_Helmet2 = { "BP_Helmet2", nullptr, (EPropertyFlags)0x0020080000020005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACelestia_SignsofFateCharacter, BP_Helmet2), Z_Construct_UClass_ABP_Helmet2_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BP_Helmet2_MetaData), NewProp_BP_Helmet2_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x00100000000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACelestia_SignsofFateCharacter, Health), Z_Construct_UClass_UHealthComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Health_MetaData), NewProp_Health_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_Helmets = { "Helmets", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ACelestia_SignsofFateCharacter, Helmets), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Helmets_MetaData), NewProp_Helmets_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_FollowCamera,
@@ -354,6 +377,9 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACelestia
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_MoveAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_MouseLookAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_BP_Helmet2,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_Health,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::NewProp_Helmets,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::DependentSingletons[])() = {
@@ -361,6 +387,9 @@ UObject* (*const Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::Depe
 	(UObject* (*)())Z_Construct_UPackage__Script_Celestia_SignsofFate,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UI_Equipar_NoRegister, (int32)VTABLE_OFFSET(ACelestia_SignsofFateCharacter, II_Equipar), false },  // 3140158976
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::ClassParams = {
 	&ACelestia_SignsofFateCharacter::StaticClass,
 	"Game",
@@ -368,11 +397,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ACelestia_SignsofFateCh
 	DependentSingletons,
 	FuncInfo,
 	Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::PropPointers,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::PropPointers),
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x008001A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_ACelestia_SignsofFateCharacter_Statics::Class_MetaDataParams)
 };
@@ -392,10 +421,10 @@ ACelestia_SignsofFateCharacter::~ACelestia_SignsofFateCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Celestia_SignsofFateCharacter_h__Script_Celestia_SignsofFate_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACelestia_SignsofFateCharacter, ACelestia_SignsofFateCharacter::StaticClass, TEXT("ACelestia_SignsofFateCharacter"), &Z_Registration_Info_UClass_ACelestia_SignsofFateCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACelestia_SignsofFateCharacter), 2758649323U) },
+		{ Z_Construct_UClass_ACelestia_SignsofFateCharacter, ACelestia_SignsofFateCharacter::StaticClass, TEXT("ACelestia_SignsofFateCharacter"), &Z_Registration_Info_UClass_ACelestia_SignsofFateCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACelestia_SignsofFateCharacter), 866744260U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Celestia_SignsofFateCharacter_h__Script_Celestia_SignsofFate_1198821368(TEXT("/Script/Celestia_SignsofFate"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Celestia_SignsofFateCharacter_h__Script_Celestia_SignsofFate_741882082(TEXT("/Script/Celestia_SignsofFate"),
 	Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Celestia_SignsofFateCharacter_h__Script_Celestia_SignsofFate_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Celestia_SignsofFateCharacter_h__Script_Celestia_SignsofFate_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

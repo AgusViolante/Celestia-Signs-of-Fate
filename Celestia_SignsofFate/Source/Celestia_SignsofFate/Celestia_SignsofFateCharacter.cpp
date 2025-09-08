@@ -4,13 +4,17 @@
 #include "Engine/LocalPlayer.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "UObject/Interface.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "Public/Components/HealthComponent.h"
+#include "Engine/Engine.h"
 #include "Celestia_SignsofFate.h"
+
 
 ACelestia_SignsofFateCharacter::ACelestia_SignsofFateCharacter()
 {
@@ -46,9 +50,25 @@ ACelestia_SignsofFateCharacter::ACelestia_SignsofFateCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
 
+	//Components
+	Health = CreateDefaultSubobject<UHealthComponent>(TEXT("HealthComponent"));
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
+
+void ACelestia_SignsofFateCharacter::AddHelmet_Implementation(int Coins)
+{
+	Helmets = Helmets + Coins;
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor::Red,FString::FromInt(Helmets)
+
+		);
+	}
+}
+
+
 
 void ACelestia_SignsofFateCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {

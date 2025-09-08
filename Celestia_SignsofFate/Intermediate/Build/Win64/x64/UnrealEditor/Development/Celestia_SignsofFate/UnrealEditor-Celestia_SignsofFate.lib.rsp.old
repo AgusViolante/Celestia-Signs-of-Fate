@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Celestia_SignsofFate.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/x64/Celestia_SignsofFateEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/x64/UnrealEditor/Development/Celestia_SignsofFate/Module.Celestia_SignsofFate.1.cpp.obj"
+"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/x64/UnrealEditor/Development/Celestia_SignsofFate/Module.Celestia_SignsofFate.2.cpp.obj"
+"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/x64/UnrealEditor/Development/Celestia_SignsofFate/Default.rc2.res"
+/OUT:"C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/x64/UnrealEditor/Development/Celestia_SignsofFate/UnrealEditor-Celestia_SignsofFate.lib"

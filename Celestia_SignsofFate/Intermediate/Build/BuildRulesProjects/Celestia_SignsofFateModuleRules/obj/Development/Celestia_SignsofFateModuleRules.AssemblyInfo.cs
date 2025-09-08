@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Celestia_SignsofFateModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+717f493b02445b92600df2fe92cfd738ab76807b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d59970b0ee5f43b628bc52b91ade66c360610ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("Celestia_SignsofFateModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Celestia_SignsofFateModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

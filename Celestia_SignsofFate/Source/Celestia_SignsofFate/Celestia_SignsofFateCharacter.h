@@ -3,23 +3,28 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "UObject/Interface.h"
+#include "Armor/BP_Helmet2.h"
 #include "GameFramework/Character.h"
+#include "interfaces/I_Equipar.h"
 #include "Logging/LogMacros.h"
+#include "Public/Components/HealthComponent.h"
+#include "Engine/Engine.h"
 #include "Celestia_SignsofFateCharacter.generated.h"
 
 class USpringArmComponent;
 class UCameraComponent;
 class UInputAction;
+class ABP_Helmet2;
 struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
-
 /**
  *  A simple player-controllable third person character
  *  Implements a controllable orbiting camera
  */
 UCLASS(abstract)
-class ACelestia_SignsofFateCharacter : public ACharacter
+class ACelestia_SignsofFateCharacter : public ACharacter, public II_Equipar
 {
 	GENERATED_BODY()
 
@@ -49,15 +54,29 @@ protected:
 	UPROPERTY(EditAnywhere, Category="Input")
 	UInputAction* MouseLookAction;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+	ABP_Helmet2* BP_Helmet2;
+
 public:
 
 	/** Constructor */
-	ACelestia_SignsofFateCharacter();	
+	ACelestia_SignsofFateCharacter();
+	//Interface
+	virtual void AddHelmet_Implementation(int Coins) override;
+	
 
+	UPROPERTY(VisibleAnywhere, Category = "Components")
+	UHealthComponent* Health;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventary") int Helmets = 0;
+
+	
 protected:
 
 	/** Initialize input action bindings */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	
 
 protected:
 

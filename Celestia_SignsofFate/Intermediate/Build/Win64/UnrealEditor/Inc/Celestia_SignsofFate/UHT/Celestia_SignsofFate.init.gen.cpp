@@ -21,13 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeCelestia_SignsofFate_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x325B34E8,
-				0x238486B2,
+				0xC06246EA,
+				0x29D9E891,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_Celestia_SignsofFate.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_Celestia_SignsofFate.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Celestia_SignsofFate(Z_Construct_UPackage__Script_Celestia_SignsofFate, TEXT("/Script/Celestia_SignsofFate"), Z_Registration_Info_UPackage__Script_Celestia_SignsofFate, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x325B34E8, 0x238486B2));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Celestia_SignsofFate(Z_Construct_UPackage__Script_Celestia_SignsofFate, TEXT("/Script/Celestia_SignsofFate"), Z_Registration_Info_UPackage__Script_Celestia_SignsofFate, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xC06246EA, 0x29D9E891));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
