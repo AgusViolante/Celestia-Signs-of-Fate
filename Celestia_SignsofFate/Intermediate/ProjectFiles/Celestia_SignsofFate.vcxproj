@@ -275,7 +275,7 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Celestia_SignsofFatePlayerController.h"/>
-    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\BP_Helmet.cpp">
+    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\BP_Cura.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\BP_Helmet2.cpp">
@@ -287,7 +287,7 @@
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\interfaces\I_Equipar.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Helmet.h"/>
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Cura.h" />
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Helmet2.h"/>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Components\HealthComponent.h"/>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\interfaces\I_Equipar.h"/>

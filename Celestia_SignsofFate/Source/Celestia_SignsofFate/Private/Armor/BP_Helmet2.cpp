@@ -45,9 +45,6 @@ void ABP_Helmet2::NotifyActorBeginOverlap(AActor* OtherActor)
 	{
 		Salud->ReciveDanio(DamageCharacter);
 	}
-	if (UHealthComponent* Cura = OtherActor->FindComponentByClass<UHealthComponent>())
-	{
-		Cura->CuraDanio(CuraCharacter);
-	}
+	
 };
 

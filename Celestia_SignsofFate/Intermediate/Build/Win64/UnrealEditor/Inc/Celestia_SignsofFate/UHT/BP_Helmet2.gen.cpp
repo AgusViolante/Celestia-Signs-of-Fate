@@ -78,16 +78,11 @@ struct Z_Construct_UClass_ABP_Helmet2_Statics
 		{ "Category", "BP_Helmet2" },
 		{ "ModuleRelativePath", "Public/Armor/BP_Helmet2.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CuraCharacter_MetaData[] = {
-		{ "Category", "BP_Helmet2" },
-		{ "ModuleRelativePath", "Public/Armor/BP_Helmet2.h" },
-	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_BoxCollision;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CubeMesh;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_CoinsAmount;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DamageCharacter;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_CuraCharacter;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -99,13 +94,11 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABP_Helmet2_St
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_CubeMesh = { "CubeMesh", nullptr, (EPropertyFlags)0x011400000008000d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABP_Helmet2, CubeMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CubeMesh_MetaData), NewProp_CubeMesh_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_CoinsAmount = { "CoinsAmount", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABP_Helmet2, CoinsAmount), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CoinsAmount_MetaData), NewProp_CoinsAmount_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_DamageCharacter = { "DamageCharacter", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABP_Helmet2, DamageCharacter), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DamageCharacter_MetaData), NewProp_DamageCharacter_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_CuraCharacter = { "CuraCharacter", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABP_Helmet2, CuraCharacter), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CuraCharacter_MetaData), NewProp_CuraCharacter_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABP_Helmet2_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_BoxCollision,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_CubeMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_CoinsAmount,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_DamageCharacter,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Helmet2_Statics::NewProp_CuraCharacter,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABP_Helmet2_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ABP_Helmet2_Statics::DependentSingletons[])() = {
@@ -144,10 +137,10 @@ ABP_Helmet2::~ABP_Helmet2() {}
 struct Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Helmet2_h__Script_Celestia_SignsofFate_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABP_Helmet2, ABP_Helmet2::StaticClass, TEXT("ABP_Helmet2"), &Z_Registration_Info_UClass_ABP_Helmet2, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABP_Helmet2), 3089369477U) },
+		{ Z_Construct_UClass_ABP_Helmet2, ABP_Helmet2::StaticClass, TEXT("ABP_Helmet2"), &Z_Registration_Info_UClass_ABP_Helmet2, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABP_Helmet2), 612596154U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Helmet2_h__Script_Celestia_SignsofFate_1820817513(TEXT("/Script/Celestia_SignsofFate"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Helmet2_h__Script_Celestia_SignsofFate_398341041(TEXT("/Script/Celestia_SignsofFate"),
 	Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Helmet2_h__Script_Celestia_SignsofFate_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Helmet2_h__Script_Celestia_SignsofFate_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

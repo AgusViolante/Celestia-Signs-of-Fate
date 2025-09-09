@@ -31,6 +31,8 @@
 		"Module.Celestia_SignsofFate.2.cpp.obj": [
 			"CombatStateTreeUtility.gen.cpp.obj",
 			"EnvQueryContext_Player.gen.cpp.obj",
+			"HealthComponent.gen.cpp.obj",
+			"I_Equipar.gen.cpp.obj",
 			"PlatformingCharacter.gen.cpp.obj",
 			"PlatformingGameMode.gen.cpp.obj",
 			"PlatformingPlayerController.gen.cpp.obj",
@@ -54,17 +56,19 @@
 			"Celestia_SignsofFatePlayerController.cpp.obj",
 			"BP_Helmet.cpp.obj",
 			"BP_Helmet2.cpp.obj",
+			"HealthComponent.cpp.obj",
+			"I_Equipar.cpp.obj",
 			"CombatAIController.cpp.obj",
 			"CombatEnemy.cpp.obj",
 			"CombatEnemySpawner.cpp.obj",
-			"CombatStateTreeUtility.cpp.obj",
+			"CombatStateTreeUtility.cpp.obj"
+		],
+		"Module.Celestia_SignsofFate.3.cpp.obj": [
 			"EnvQueryContext_Player.cpp.obj",
 			"AnimNotify_CheckChargedAttack.cpp.obj",
 			"AnimNotify_CheckCombo.cpp.obj",
 			"AnimNotify_DoAttackTrace.cpp.obj",
-			"CombatCharacter.cpp.obj"
-		],
-		"Module.Celestia_SignsofFate.3.cpp.obj": [
+			"CombatCharacter.cpp.obj",
 			"CombatGameMode.cpp.obj",
 			"CombatPlayerController.cpp.obj",
 			"CombatActivationVolume.cpp.obj",

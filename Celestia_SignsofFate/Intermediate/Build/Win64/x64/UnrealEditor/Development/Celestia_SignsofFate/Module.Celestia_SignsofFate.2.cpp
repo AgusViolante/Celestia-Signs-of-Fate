@@ -24,7 +24,7 @@
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Source/Celestia_SignsofFate/Celestia_SignsofFateCharacter.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Source/Celestia_SignsofFate/Celestia_SignsofFateGameMode.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Source/Celestia_SignsofFate/Celestia_SignsofFatePlayerController.cpp"
-#include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Source/Celestia_SignsofFate/Private/Armor/BP_Helmet.cpp"
+#include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Source/Celestia_SignsofFate/Private/Armor/BP_Cura.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Source/Celestia_SignsofFate/Private/Armor/BP_Helmet2.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Source/Celestia_SignsofFate/Private/Components/HealthComponent.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Source/Celestia_SignsofFate/Private/interfaces/I_Equipar.cpp"

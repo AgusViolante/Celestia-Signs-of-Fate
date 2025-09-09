@@ -39,8 +39,6 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float DamageCharacter = 10.0f;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float CuraCharacter = 5.0f;
+	
 
 };

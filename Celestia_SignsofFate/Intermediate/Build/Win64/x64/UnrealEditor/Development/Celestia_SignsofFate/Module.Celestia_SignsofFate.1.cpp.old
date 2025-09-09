@@ -4,6 +4,7 @@
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/AnimNotify_DoAttackTrace.gen.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/AnimNotify_EndDash.gen.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/BP_Helmet.gen.cpp"
+#include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/BP_Helmet2.gen.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/Celestia_SignsofFate.init.gen.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/Celestia_SignsofFateCharacter.gen.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/Celestia_SignsofFateGameMode.gen.cpp"
@@ -23,4 +24,3 @@
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/CombatLavaFloor.gen.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/CombatLifeBar.gen.cpp"
 #include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/CombatPlayerController.gen.cpp"
-#include "C:/Users/violanteagus/Desktop/Githubs/Celestia-Signs-of-Fate/Celestia_SignsofFate/Intermediate/Build/Win64/UnrealEditor/Inc/Celestia_SignsofFate/UHT/CombatStateTreeUtility.gen.cpp"

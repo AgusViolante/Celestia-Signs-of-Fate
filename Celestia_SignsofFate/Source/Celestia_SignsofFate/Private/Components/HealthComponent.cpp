@@ -26,7 +26,13 @@ bool UHealthComponent::heal(float amount)
 
 void UHealthComponent::ReciveDanio(float danio)
 {
-	if (health <= 0) { return; }
+	if (health <= 0) { 
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor::Black,FString("Ya moriste"));
+		}
+		return;
+	}
 
 	health -= danio;
 	if (GEngine)
@@ -38,6 +44,15 @@ void UHealthComponent::ReciveDanio(float danio)
 
 void UHealthComponent::CuraDanio(float cura)
 {
+
+	if (health >= 100)
+	{
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1,5.0f,FColor::Green,FString("Ya te curaste al maximo"));
+		}
+		return;
+	}
 	health += cura;
 	if (GEngine)
 	{
