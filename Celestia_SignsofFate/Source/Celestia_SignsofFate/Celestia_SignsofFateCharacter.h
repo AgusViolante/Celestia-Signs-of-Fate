@@ -9,6 +9,7 @@
 #include "interfaces/I_Equipar.h"
 #include "Logging/LogMacros.h"
 #include "Public/Components/HealthComponent.h"
+#include "Public/Components/ExpComponent.h"
 #include "Engine/Engine.h"
 #include "Celestia_SignsofFateCharacter.generated.h"
 
@@ -63,12 +64,16 @@ public:
 	ACelestia_SignsofFateCharacter();
 	//Interface
 	virtual void AddHelmet_Implementation(int Coins) override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventary") int Helmets = 0;
 	
+	//Componentes
+	UPROPERTY(VisibleAnywhere, Category = "Components")
+	UExpComponent* Exp;
 
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	UHealthComponent* Health;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventary") int Helmets = 0;
 
 	
 protected:

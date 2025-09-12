@@ -18,6 +18,9 @@
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\animnotify_enddash.gen.cpp",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\source\\celestia_signsoffate\\variant_platforming\\animation\\animnotify_enddash.h",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\animnotify_enddash.generated.h",
+            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\aumentaexperiencia.gen.cpp",
+            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\source\\celestia_signsoffate\\public\\armor\\aumentaexperiencia.h",
+            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\aumentaexperiencia.generated.h",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\bp_cura.gen.cpp",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\source\\celestia_signsoffate\\public\\armor\\bp_cura.h",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\bp_cura.generated.h",
@@ -40,6 +43,8 @@
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\i_equipar.generated.h",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\source\\celestia_signsoffate\\public\\components\\healthcomponent.h",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\healthcomponent.generated.h",
+            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\source\\celestia_signsoffate\\public\\components\\expcomponent.h",
+            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\expcomponent.generated.h",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\celestia_signsoffatecharacter.generated.h",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\celestia_signsoffategamemode.gen.cpp",
             "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\source\\celestia_signsoffate\\celestia_signsoffategamemode.h",
@@ -178,10 +183,7 @@
             "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\moviescene\\public\\entitysystem\\relativeptr.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\moviescene\\public\\evaluation\\moviescenepreanimatedstate.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\userwidget.generated.h",
-            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\combatlifebar.generated.h",
-            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\combatplayercontroller.gen.cpp",
-            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\source\\celestia_signsoffate\\variant_combat\\combatplayercontroller.h",
-            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\combatplayercontroller.generated.h"
+            "c:\\users\\violanteagus\\desktop\\githubs\\celestia-signs-of-fate\\celestia_signsoffate\\intermediate\\build\\win64\\unrealeditor\\inc\\celestia_signsoffate\\uht\\combatlifebar.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

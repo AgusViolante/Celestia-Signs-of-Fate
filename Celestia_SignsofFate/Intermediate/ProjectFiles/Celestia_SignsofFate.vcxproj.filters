@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\Celestia_SignsofFate.sln.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -66,7 +67,10 @@
     <Filter Include="Source\Celestia_SignsofFate\Private\Armor">
       <UniqueIdentifier>{37EDE45D-7369-3B9E-BEF9-9EF91EFA8508}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\BP_Helmet.cpp">
+    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\AumentaExperiencia.cpp">
+      <Filter>Source\Celestia_SignsofFate\Private\Armor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\BP_Cura.cpp">
       <Filter>Source\Celestia_SignsofFate\Private\Armor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\BP_Helmet2.cpp">
@@ -75,8 +79,17 @@
     <Filter Include="Source\Celestia_SignsofFate\Private\Components">
       <UniqueIdentifier>{815B873B-79D3-3EBF-9C31-B6CBE1E236F7}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Components\ExpComponent.cpp">
+      <Filter>Source\Celestia_SignsofFate\Private\Components</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Components\HealthComponent.cpp">
       <Filter>Source\Celestia_SignsofFate\Private\Components</Filter>
+    </ClCompile>
+    <Filter Include="Source\Celestia_SignsofFate\Private\EnemyBase">
+      <UniqueIdentifier>{AD56C688-4A06-3F24-8E6D-DD276DEE8D95}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\EnemyBase\EnemyBase.cpp">
+      <Filter>Source\Celestia_SignsofFate\Private\EnemyBase</Filter>
     </ClCompile>
     <Filter Include="Source\Celestia_SignsofFate\Private\interfaces">
       <UniqueIdentifier>{A25FAB3B-3B39-3735-A515-B8BF0C4F85E3}</UniqueIdentifier>
@@ -90,7 +103,10 @@
     <Filter Include="Source\Celestia_SignsofFate\Public\Armor">
       <UniqueIdentifier>{7332CC2C-71FC-3D0E-A17A-0DF4C6EAA478}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Helmet.h">
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\AumentaExperiencia.h">
+      <Filter>Source\Celestia_SignsofFate\Public\Armor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Cura.h">
       <Filter>Source\Celestia_SignsofFate\Public\Armor</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Helmet2.h">
@@ -99,8 +115,17 @@
     <Filter Include="Source\Celestia_SignsofFate\Public\Components">
       <UniqueIdentifier>{1A7CB38F-A686-37F2-9A93-17FC68781708}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Components\ExpComponent.h">
+      <Filter>Source\Celestia_SignsofFate\Public\Components</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Components\HealthComponent.h">
       <Filter>Source\Celestia_SignsofFate\Public\Components</Filter>
+    </ClInclude>
+    <Filter Include="Source\Celestia_SignsofFate\Public\EnemyBase">
+      <UniqueIdentifier>{4C19467E-AEC3-3039-B676-0160C767083A}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\EnemyBase\EnemyBase.h">
+      <Filter>Source\Celestia_SignsofFate\Public\EnemyBase</Filter>
     </ClInclude>
     <Filter Include="Source\Celestia_SignsofFate\Public\interfaces">
       <UniqueIdentifier>{6995CB0A-16EA-38AC-AC36-D94CE2454250}</UniqueIdentifier>

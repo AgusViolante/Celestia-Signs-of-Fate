@@ -253,6 +253,7 @@
     <None Include="..\..\Source\Celestia_SignsofFate.Target.cs"/>
     <None Include="..\..\Source\Celestia_SignsofFateEditor.Target.cs"/>
     <None Include="..\..\.vsconfig"/>
+    <None Include="..\..\Celestia_SignsofFate.sln.DotSettings.user"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
@@ -275,21 +276,33 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Celestia_SignsofFatePlayerController.h"/>
+    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\AumentaExperiencia.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\BP_Cura.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Armor\BP_Helmet2.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Components\ExpComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\Components\HealthComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\EnemyBase\EnemyBase.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Private\interfaces\I_Equipar.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Cura.h" />
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\AumentaExperiencia.h"/>
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Cura.h"/>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Armor\BP_Helmet2.h"/>
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Components\ExpComponent.h"/>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\Components\HealthComponent.h"/>
+    <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\EnemyBase\EnemyBase.h"/>
     <ClInclude Include="..\..\Source\Celestia_SignsofFate\Public\interfaces\I_Equipar.h"/>
     <ClCompile Include="..\..\Source\Celestia_SignsofFate\Variant_Combat\CombatCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
