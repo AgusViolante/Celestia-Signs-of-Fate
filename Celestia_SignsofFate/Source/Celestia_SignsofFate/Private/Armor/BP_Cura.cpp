@@ -4,6 +4,7 @@
 #include "Armor/BP_Cura.h"
 #include "Components/BoxComponent.h"
 #include "Components/HealthComponent.h"
+#include "interfaces/I_Equipar.h"
 
 
 // Sets default values
@@ -41,5 +42,11 @@ void ABP_Cura::NotifyActorBeginOverlap(AActor* OtherActor)
 	{
 		Cura->CuraDanio(CuraCharacter);
 	}
+
+	if (OtherActor && OtherActor->GetClass()->ImplementsInterface(UI_Equipar::StaticClass()))
+	{
+		II_Equipar::Execute_AddPotion(OtherActor, SumaPotion);
+	}
+
 }
 

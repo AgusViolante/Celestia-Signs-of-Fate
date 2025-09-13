@@ -17,6 +17,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UHealthComponent *********************************************************
+#define FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Components_HealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execCuraDanio);
+
+
 CELESTIA_SIGNSOFFATE_API UClass* Z_Construct_UClass_UHealthComponent_NoRegister();
 
 #define FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Components_HealthComponent_h_13_INCLASS_NO_PURE_DECLS \
@@ -44,6 +48,7 @@ public: \
 #define FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Components_HealthComponent_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Components_HealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Components_HealthComponent_h_13_INCLASS_NO_PURE_DECLS \
 	FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Components_HealthComponent_h_13_ENHANCED_CONSTRUCTORS \
 private: \

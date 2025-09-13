@@ -44,7 +44,6 @@ void UHealthComponent::ReciveDanio(float danio)
 
 void UHealthComponent::CuraDanio(float cura)
 {
-
 	if (health >= 100)
 	{
 		if (GEngine)
@@ -60,6 +59,8 @@ void UHealthComponent::CuraDanio(float cura)
 		);
 	}
 }
+
+
 
 
 // Called when the game starts

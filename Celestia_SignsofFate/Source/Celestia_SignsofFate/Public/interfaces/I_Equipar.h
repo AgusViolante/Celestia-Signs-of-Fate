@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Armor/BP_Helmet2.h"
+#include "Armor/BP_Cura.h"
 #include "UObject/Interface.h"
 #include "I_Equipar.generated.h"
 
@@ -24,6 +25,9 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Player")
 	//void AddHelmet(ABP_Helmet2* Helmet);
 	void AddHelmet(int Coins);
+	
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Player")
+	void AddPotion(int Potion);
 
 	void ReciveDamage(float damage);
 };

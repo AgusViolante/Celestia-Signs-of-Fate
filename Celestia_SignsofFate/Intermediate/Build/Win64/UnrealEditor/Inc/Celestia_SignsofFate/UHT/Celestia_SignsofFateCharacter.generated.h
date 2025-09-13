@@ -20,6 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Celestia_SignsofFateCharacter_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execDoJumpEnd); \
 	DECLARE_FUNCTION(execDoJumpStart); \
+	DECLARE_FUNCTION(execUsePotion); \
 	DECLARE_FUNCTION(execDoLook); \
 	DECLARE_FUNCTION(execDoMove);
 

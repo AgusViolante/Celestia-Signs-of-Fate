@@ -88,12 +88,77 @@ DEFINE_FUNCTION(II_Equipar::execAddHelmet)
 }
 // ********** End Interface UI_Equipar Function AddHelmet ******************************************
 
+// ********** Begin Interface UI_Equipar Function AddPotion ****************************************
+struct I_Equipar_eventAddPotion_Parms
+{
+	int32 Potion;
+};
+void II_Equipar::AddPotion(int32 Potion)
+{
+	check(0 && "Do not directly call Event functions in Interfaces. Call Execute_AddPotion instead.");
+}
+static FName NAME_UI_Equipar_AddPotion = FName(TEXT("AddPotion"));
+void II_Equipar::Execute_AddPotion(UObject* O, int32 Potion)
+{
+	check(O != NULL);
+	check(O->GetClass()->ImplementsInterface(UI_Equipar::StaticClass()));
+	I_Equipar_eventAddPotion_Parms Parms;
+	UFunction* const Func = O->FindFunction(NAME_UI_Equipar_AddPotion);
+	if (Func)
+	{
+		Parms.Potion=Potion;
+		O->ProcessEvent(Func, &Parms);
+	}
+	else if (auto I = (II_Equipar*)(O->GetNativeInterfaceAddress(UI_Equipar::StaticClass())))
+	{
+		I->AddPotion_Implementation(Potion);
+	}
+}
+struct Z_Construct_UFunction_UI_Equipar_AddPotion_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Player" },
+		{ "ModuleRelativePath", "Public/interfaces/I_Equipar.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Potion;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::NewProp_Potion = { "Potion", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(I_Equipar_eventAddPotion_Parms, Potion), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::NewProp_Potion,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UI_Equipar, nullptr, "AddPotion", Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::PropPointers), sizeof(I_Equipar_eventAddPotion_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::Function_MetaDataParams), Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(I_Equipar_eventAddPotion_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UI_Equipar_AddPotion()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UI_Equipar_AddPotion_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(II_Equipar::execAddPotion)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_Potion);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->AddPotion_Implementation(Z_Param_Potion);
+	P_NATIVE_END;
+}
+// ********** End Interface UI_Equipar Function AddPotion ******************************************
+
 // ********** Begin Interface UI_Equipar ***********************************************************
 void UI_Equipar::StaticRegisterNativesUI_Equipar()
 {
 	UClass* Class = UI_Equipar::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AddHelmet", &II_Equipar::execAddHelmet },
+		{ "AddPotion", &II_Equipar::execAddPotion },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -136,6 +201,7 @@ struct Z_Construct_UClass_UI_Equipar_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UI_Equipar_AddHelmet, "AddHelmet" }, // 4038486927
+		{ &Z_Construct_UFunction_UI_Equipar_AddPotion, "AddPotion" }, // 1922633183
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -179,10 +245,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(UI_Equipar);
 struct Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_interfaces_I_Equipar_h__Script_Celestia_SignsofFate_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UI_Equipar, UI_Equipar::StaticClass, TEXT("UI_Equipar"), &Z_Registration_Info_UClass_UI_Equipar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UI_Equipar), 3140158976U) },
+		{ Z_Construct_UClass_UI_Equipar, UI_Equipar::StaticClass, TEXT("UI_Equipar"), &Z_Registration_Info_UClass_UI_Equipar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UI_Equipar), 2809373458U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_interfaces_I_Equipar_h__Script_Celestia_SignsofFate_3387865013(TEXT("/Script/Celestia_SignsofFate"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_interfaces_I_Equipar_h__Script_Celestia_SignsofFate_133528560(TEXT("/Script/Celestia_SignsofFate"),
 	Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_interfaces_I_Equipar_h__Script_Celestia_SignsofFate_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_interfaces_I_Equipar_h__Script_Celestia_SignsofFate_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

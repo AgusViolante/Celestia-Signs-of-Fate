@@ -36,7 +36,10 @@ public:
 	TObjectPtr<UStaticMeshComponent> CubeMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float CuraCharacter = 5.0f;
+	int CuraCharacter = 5.0f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int SumaPotion = 1;
 
 
 };

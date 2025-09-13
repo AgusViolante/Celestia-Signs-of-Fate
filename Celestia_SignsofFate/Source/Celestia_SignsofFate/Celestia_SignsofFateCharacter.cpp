@@ -71,6 +71,59 @@ void ACelestia_SignsofFateCharacter::AddHelmet_Implementation(int Coins)
 }
 
 
+void ACelestia_SignsofFateCharacter::AddPotion_Implementation(int Amount)
+{
+	Potion += Amount;
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::FromInt(Potion));
+	}
+}
+
+void ACelestia_SignsofFateCharacter::UsePotion()
+{
+	
+	if (Health && (Potion > 0))
+	{
+		
+		if (Health->heal(static_cast<float>(CuraCharacter)))
+		{
+			Potion--;
+
+			if (GEngine)
+			{
+				GEngine->AddOnScreenDebugMessage(
+					-1, 3.0f, FColor::Green,
+					FString::Printf(TEXT("Usaste una poción. Restantes: %d"), Potion)
+				);
+			}
+		}
+		else
+		{
+			
+			if (GEngine)
+			{
+				GEngine->AddOnScreenDebugMessage(
+					-1, 3.0f, FColor::Yellow,
+					TEXT("La vida ya está al máximo. No se gastó la poción.")
+				);
+			}
+		}
+	}
+	else
+	{
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(
+				-1, 3.0f, FColor::Yellow,
+				TEXT("No hay pociones o componente de salud no disponible.")
+			);
+		}
+	}
+
+}
+
+
 
 void ACelestia_SignsofFateCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
@@ -87,6 +140,10 @@ void ACelestia_SignsofFateCharacter::SetupPlayerInputComponent(UInputComponent* 
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ACelestia_SignsofFateCharacter::Look);
+
+		//Using
+		EnhancedInputComponent->BindAction(IA_Using, ETriggerEvent::Started, this, &ACelestia_SignsofFateCharacter::UsePotion);
+
 	}
 	else
 	{
@@ -141,6 +198,22 @@ void ACelestia_SignsofFateCharacter::DoLook(float Yaw, float Pitch)
 		AddControllerPitchInput(Pitch);
 	}
 }
+/*
+void ACelestia_SignsofFateCharacter::UsePotion()
+{
+	if (UHealthComponent* CuraDanio{})
+	{
+		Health += CuraCharacter;
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("Usaste la poti con InputAction2323!")+ FString::SanitizeFloat(health));
+		}
+	}
+		
+	
+	
+}*/
+
 
 void ACelestia_SignsofFateCharacter::DoJumpStart()
 {

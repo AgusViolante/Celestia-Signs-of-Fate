@@ -55,6 +55,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category="Input")
 	UInputAction* MouseLookAction;
 
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* IA_Using;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 	ABP_Helmet2* BP_Helmet2;
 
@@ -65,7 +68,14 @@ public:
 	//Interface
 	virtual void AddHelmet_Implementation(int Coins) override;
 
+	virtual void AddPotion_Implementation(int Potion);
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventary") int Helmets = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventary") int Potion = 5;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int CuraCharacter = 5.0f;
 	
 	//Componentes
 	UPROPERTY(VisibleAnywhere, Category = "Components")
@@ -100,6 +110,9 @@ public:
 	/** Handles look inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category="Input")
 	virtual void DoLook(float Yaw, float Pitch);
+
+	UFUNCTION(BlueprintCallable, Category="Input")
+	virtual void UsePotion();
 
 	/** Handles jump pressed inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category="Input")

@@ -20,6 +20,7 @@ public:
 
 	void ReciveDanio(float danio);
 
+	UFUNCTION(BlueprintCallable)
 	void CuraDanio(float cura);
 
 
