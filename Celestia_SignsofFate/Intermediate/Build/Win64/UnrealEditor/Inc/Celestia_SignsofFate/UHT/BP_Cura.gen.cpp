@@ -70,10 +70,6 @@ struct Z_Construct_UClass_ABP_Cura_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Armor/BP_Cura.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CuraCharacter_MetaData[] = {
-		{ "Category", "BP_Cura" },
-		{ "ModuleRelativePath", "Public/Armor/BP_Cura.h" },
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SumaPotion_MetaData[] = {
 		{ "Category", "BP_Cura" },
 		{ "ModuleRelativePath", "Public/Armor/BP_Cura.h" },
@@ -81,7 +77,6 @@ struct Z_Construct_UClass_ABP_Cura_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_BoxCollision;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CubeMesh;
-	static const UECodeGen_Private::FIntPropertyParams NewProp_CuraCharacter;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_SumaPotion;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
@@ -92,12 +87,10 @@ struct Z_Construct_UClass_ABP_Cura_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABP_Cura_Statics::NewProp_BoxCollision = { "BoxCollision", nullptr, (EPropertyFlags)0x011400000008000d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABP_Cura, BoxCollision), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BoxCollision_MetaData), NewProp_BoxCollision_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABP_Cura_Statics::NewProp_CubeMesh = { "CubeMesh", nullptr, (EPropertyFlags)0x011400000008000d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABP_Cura, CubeMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CubeMesh_MetaData), NewProp_CubeMesh_MetaData) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABP_Cura_Statics::NewProp_CuraCharacter = { "CuraCharacter", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABP_Cura, CuraCharacter), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CuraCharacter_MetaData), NewProp_CuraCharacter_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ABP_Cura_Statics::NewProp_SumaPotion = { "SumaPotion", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABP_Cura, SumaPotion), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SumaPotion_MetaData), NewProp_SumaPotion_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABP_Cura_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Cura_Statics::NewProp_BoxCollision,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Cura_Statics::NewProp_CubeMesh,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Cura_Statics::NewProp_CuraCharacter,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABP_Cura_Statics::NewProp_SumaPotion,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABP_Cura_Statics::PropPointers) < 2048);
@@ -137,10 +130,10 @@ ABP_Cura::~ABP_Cura() {}
 struct Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Cura_h__Script_Celestia_SignsofFate_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABP_Cura, ABP_Cura::StaticClass, TEXT("ABP_Cura"), &Z_Registration_Info_UClass_ABP_Cura, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABP_Cura), 1838498094U) },
+		{ Z_Construct_UClass_ABP_Cura, ABP_Cura::StaticClass, TEXT("ABP_Cura"), &Z_Registration_Info_UClass_ABP_Cura, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABP_Cura), 1961580922U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Cura_h__Script_Celestia_SignsofFate_2012714083(TEXT("/Script/Celestia_SignsofFate"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Cura_h__Script_Celestia_SignsofFate_4176979323(TEXT("/Script/Celestia_SignsofFate"),
 	Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Cura_h__Script_Celestia_SignsofFate_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_violanteagus_Desktop_Githubs_Celestia_Signs_of_Fate_Celestia_SignsofFate_Source_Celestia_SignsofFate_Public_Armor_BP_Cura_h__Script_Celestia_SignsofFate_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

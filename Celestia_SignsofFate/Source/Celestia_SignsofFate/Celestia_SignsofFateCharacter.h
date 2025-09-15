@@ -72,7 +72,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventary") int Helmets = 0;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventary") int Potion = 5;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Inventary") int Potion = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int CuraCharacter = 5.0f;
@@ -81,7 +81,7 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	UExpComponent* Exp;
 
-	UPROPERTY(VisibleAnywhere, Category = "Components")
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Components")
 	UHealthComponent* Health;
 
 

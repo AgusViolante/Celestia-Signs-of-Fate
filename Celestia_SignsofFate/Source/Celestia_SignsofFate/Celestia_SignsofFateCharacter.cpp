@@ -94,8 +94,8 @@ void ACelestia_SignsofFateCharacter::UsePotion()
 			{
 				GEngine->AddOnScreenDebugMessage(
 					-1, 3.0f, FColor::Green,
-					FString::Printf(TEXT("Usaste una poción. Restantes: %d"), Potion)
-				);
+					FString::Printf(TEXT("Usaste una poción. Tenes de vida" )
+				));
 			}
 		}
 		else

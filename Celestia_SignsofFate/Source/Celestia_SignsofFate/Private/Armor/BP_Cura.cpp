@@ -38,15 +38,10 @@ void ABP_Cura::Tick(float DeltaTime)
 void ABP_Cura::NotifyActorBeginOverlap(AActor* OtherActor)
 {
 	Super::NotifyActorBeginOverlap(OtherActor);
-	if (UHealthComponent* Cura = OtherActor->FindComponentByClass<UHealthComponent>())
-	{
-		Cura->CuraDanio(CuraCharacter);
-	}
 
 	if (OtherActor && OtherActor->GetClass()->ImplementsInterface(UI_Equipar::StaticClass()))
 	{
 		II_Equipar::Execute_AddPotion(OtherActor, SumaPotion);
 	}
-
 }
 
